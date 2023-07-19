@@ -1,0 +1,123 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .container{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card{
+            position: absolute;
+            background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(./Free-desktop-world-map-wallpapers-HD.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 500px;
+            height: 280px;
+            border-radius: 10px;
+        }
+        .items{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .items img{
+            width: 100px;
+            margin: 12px 12px;
+        }
+        .number{
+            color: white;
+            text-align: center;
+            letter-spacing: 3px;
+            position: relative;
+            margin-left: 20px;
+            margin-top: 50px;
+            margin-right: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .number img{
+            width: 60px;
+        }
+        .details{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+            margin-top: 38px;
+        }
+        .details h2{
+            margin-left: 12px;
+        }
+        .expire{
+            text-align: center;
+            margin: 12px 12px;
+        }
+        .expire p{
+            margin-top: 5px;
+        }
+
+        @media (max-width:500px) {
+            .card{
+                width: 96%;
+                height: 200px;
+            }
+            .items img{
+                width: 60px;
+            }
+            .number{
+                margin-top: 30px;
+            }
+            .number img{
+                width: 40px;
+            }
+            .number h2{
+                font-size: 15px;
+            }
+            .details{
+                margin-top: 18px;
+            }
+            .details h2{
+                font-size: 15px;
+            }
+            .details p{
+                font-size: 15px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="items">
+                <img src="./sbi-logo-state-bank-india-group-vector-eps-0.png" alt="LOGO">
+                <img src="./Visa_Inc._logo.svg.png" alt="visa logo">
+            </div>
+            <div class="number">
+                <img src="./credit-card.png" alt="Chip">
+                <h2>9866 4565 3464 4465</h2>
+            </div>
+            <div class="details">
+                <h2>K V Rama Satyanarayana</h2>
+                <div class="expire">
+                    <p>Valid Upto</p>
+                    <p>03/2030</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
